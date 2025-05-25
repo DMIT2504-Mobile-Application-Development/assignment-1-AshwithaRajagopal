@@ -65,7 +65,7 @@ void main() {
     });
 
     test('CurrentWeather.fromOpenWeatherData factory constructor', () {
-      sut = CurrentWeather.fromOpenWeatherData(weatherData);
+      sut = CurrentWeather.fromJson(weatherData);
 
       expect(sut!.city, city);
       expect(sut!.description, description);
